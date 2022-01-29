@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="6.0.1" />
     <PackageReference Include="Telegram.bot" Version="17.0.0" />
     <PackageReference Include="telegram.bot.extensions.polling" Version="1.0.2" />
   </ItemGroup>

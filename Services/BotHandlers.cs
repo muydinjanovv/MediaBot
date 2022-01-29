@@ -3,8 +3,8 @@ using Telegram.Bot.Exceptions;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
-namespace MediaBot.Services
-{
+namespace MediaBot.Services;
+
     public class BotHandlers
     {
         private readonly ILogger<BotHandlers> _logger;
@@ -56,9 +56,9 @@ namespace MediaBot.Services
             {
                 await client.SendTextMessageAsync(
                     message.Chat.Id,
-                    "Salom"
+                    "Salom, bu bot sizga izlagan rasm yoki videoni topib beradi.",
+                    replyMarkup: Buttons.Choices()
                 );
             }
         }
     }
-}
